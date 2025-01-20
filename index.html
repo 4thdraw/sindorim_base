@@ -43,11 +43,54 @@
 
     <!-- 커스터마이징 -->
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/개별이름수정하기.css">
+    <link rel="stylesheet" href="./css/bby.css">
     <!-- 팀원들의 스타일 -->
 </head>
 <body>
-    <!-- 공통컨텐츠 : header, footer, aside -->
+    <!-- 팝업 -->
+    <!-- 피그마 컨텐츠 구성에 맞은 태그구조 -->
+    <div class="wrap">
+        <header id="hd" class="position-fixed bg-white start-0 end-0 ">
+
+                <div class="container d-flex justify-content-between align-items-center py-3">
+                        <h1 class="mb-0">로고</h1>
+                        <ul class="d-flex gap-3 p-0 mb-0">
+                                <li><a href="#mainNewContent" class="text-black text-decoration-none">신상으로</a></li>
+                                <li><a href="#mainReview"  class="text-black text-decoration-none">리뷰로</a></li>
+                        </ul>
+                </div>
+               
+        </header>
+        <div class="section vh-100 bg-dark text-white d-flex justify-content-center align-items-center" id="main_Slide_bby">
+                <h2>메인슬라이더</h2>
+        </div>
+        <div class="section vh-100 bg-warning" id="mainNewContent">
+                <h2>신상리스트</h2>
+                <div class="container">
+                        <div class="d-flex">
+                                <div class="col-6">
+                                        <div>큰거</div>
+                                </div>
+                                <div class="col-6 d-flex flex-wrap">
+                                        <div class="border col-6 p-5">작은거</div>
+                                        <div class="border col-6 p-5">작은거</div>
+                                        <div class="border col-6 p-5">작은거</div>
+                                        <div class="border col-6 p-5">작은거</div>
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+        <div class="section vh-100 bg-primary" id="mainReview">
+                <h2>리뷰리스트</h2>
+        </div>
+        <a href="#top" id="quickMenu" class="position-fixed end-0 bottom-0 bg-secondary p-5 rounded-circle me-4 mb-4">
+                 <span class="visually-hidden">퀵서비스</span>
+        </a>
+        <footer id="ft">
+                <p>사이트정보</p>
+        </footer>
+    </div>
   
 </body>
 </html>
